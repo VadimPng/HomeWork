@@ -1,0 +1,146 @@
+body {
+    background-color: azure;
+    font-family: 'Segoe UI';
+	width: auto;
+	position: relative;
+	margin: 0 auto;
+	padding: 0 20% 0 20%
+}
+
+/* аголовки */
+
+h1 {
+    font-size: 55px;
+	font-weight: bold;
+	width: 80%;
+	height: auto;
+	font-weight: normal;
+}
+
+h2 {
+    font-size: 33px;
+    font-weight: normal;
+	font-style: italic;
+	}
+	
+h3 {
+	color: black; 
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Абзацы */
+.ordinary {
+    font-size: 18px;
+    font-weight: normal;
+	line-height: 55px;
+    width: auto;
+    text-align: justify;
+	margin-bottom: 33px;
+}
+
+.ordinary1 {
+	color:#4F68AC;
+	font-size: 14px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight:700;
+	letter-spacing: 3px;
+}
+
+.ordinary2 {
+	color:#0A3333;
+	text-align: justify;
+	font-weight: bolder;
+	font-size:24px;
+	
+}
+
+/* Декорирование текста */
+
+.p2 {
+	font-size: 24px;
+	font-style: italic;
+	font-weight: bold
+}
+
+.bold {
+	background:silver;
+	padding: 8px;
+}
+
+.bold-text {
+	color: #24454E;
+	text-decoration: underline
+}
+
+.htmlcolor {
+	color:darkblue;
+}
+
+/* Ссылки */
+
+a {
+	color: #0A3333;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover {
+	color: rgb(81, 79, 172);
+	text-decoration: line-through;
+}
+
+/* Список */
+
+ol {
+    font-size: 24px;
+	margin-top: 33px;
+}
+
+.li_bold {
+	font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+    margin-left: 40px;
+	margin-top: 10px;
+	margin-bottom: 40px;
+	font-weight: normal;
+}
+
+.list1 {
+    font-size: 18px;
+    font-style: italic;
+}
+	
+.list1 li:before {
+    content: '.';
+	position: relative;
+	margin-right: 60px;
+}
+
+.list2  {
+    font-size: 18px;
+    font-style: italic;
+}  
+
+.list2 li:before {
+	margin-right: 70px;
+    content: '§';
+	position: relative;
+	
+}
+
+.list3 {
+    font-size: 18px;
+    font-style: italic;
+}
+	
+.list3 li:before {
+    content: '♣';
+	position: relative;
+	margin-right: 25px;
+}
