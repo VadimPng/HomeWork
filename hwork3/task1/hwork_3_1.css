@@ -1,0 +1,130 @@
+:root {
+    --round_corners: 15px;
+    --shadows: -54px 54px 56px rgba(0,0,0,0.16);
+}
+* { box-sizing: border-box; }
+
+body {
+    background: url(https://images.unsplash.com/photo-1555402179-aa333fe0ba28?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80) no-repeat;
+    background-size: cover;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-attachment: fixed;
+    font-size: 18px;
+    margin: 0 auto;
+}
+
+/* Контейнер */
+.wrapper {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    left:0;
+    right:0;
+}
+
+
+/* хедер */
+#header {
+    position: fixed;
+    width: 100%;
+    padding: 1vh 5% 1vh 4%;
+    margin: 0% auto;
+    background-color: rgb(224, 224, 224);
+    height: 10vh;
+    box-shadow: var(--shadows);
+    left: 0%;
+    top: 0%;
+    border-bottom-left-radius: var(--round_corners);
+    border-bottom-right-radius: var(--round_corners);
+}
+
+/* Тело для контента */
+#body {
+    display: inline-block;
+    width: 70%;
+    padding: 5%;
+    height: auto;
+    margin: 12vh 15% 50px 15%;
+    background-color: rgba(255, 255, 255, 0.822);
+    box-shadow: var(--shadows);
+    border-radius: var(--round_corners);
+}
+
+/* подвал */
+#footer {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 15vh;
+    margin: 0 auto;
+    background-color: rgb(128, 128, 128);
+    left:0;
+    right:0;
+    bottom: 0;
+    padding: 3%;
+    border-top-left-radius: var(--round_corners);
+    border-top-right-radius: var(--round_corners);
+}
+
+/* кнопка */
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.link_w_arrow {
+    background: url("ico/arrow.svg") no-repeat  100% 10px;
+    background-size: 30px;
+    padding-right: 40px;
+    display: inline-block;
+    position: relative;
+    font-size: 16px;
+}
+
+.btn {
+    display:inline;
+    border: none;  
+}
+
+.btn:hover {
+    margin-left: 20px;
+    transition-property: all;
+    transition-duration:0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.2s;
+
+}
+
+@media screen and (max-width: 600px){
+    #body {
+        display: inline-block;
+        width: 100%;
+        padding: 5%;
+        height: 68vh;
+        margin: 12vh 0% 50px 0%;
+        background-color: rgba(255, 255, 255, 0.822);
+        box-shadow: var(--shadows);
+}
+
+#footer {
+    position: relative;
+    min-width: 267px;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+    #header {
+        font-size: 14px;
+        min-width: 267px;
+    }
+
+    #footer {
+        font-size: 14px;
+    }
+
+    #body {
+        min-width: 267px;
+    }
+} 
