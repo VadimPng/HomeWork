@@ -1,0 +1,193 @@
+:root {
+    --round_corners: 15px;
+    --shadows: -54px 54px 56px rgba(0,0,0,0.16);
+}
+* { box-sizing: border-box; }
+
+body {
+    text-decoration: none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    background: url(https://images.unsplash.com/photo-1558089858-f49426a78c5a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+    background-attachment: fixed;
+    padding: 0;
+    margin: 0 auto;
+}
+
+/* Контейнер врапер */
+.wrapper {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    left:0;
+    right:0;
+}
+
+/* Хедер */
+#header {
+    position: fixed;
+    width: 100%;
+    padding: 1vh 5% 1vh 4%;
+    margin: 0% auto;
+    background-color: rgba(245, 245, 220, 0.767);
+    height: 10vh;
+    box-shadow: var(--shadows);
+    left: 0%;
+    top: 0%;
+}
+
+#header:hover {
+    background-color: antiquewhite;
+    transition: all ease-in-out 0.3s;
+}
+
+/* Тело для контента */
+#body {
+    display: inline-block;
+    width: 70%;
+    padding: 5%;
+    height: auto;
+    margin: 12vh 15% 50px 15%;
+    background-color: rgba(255, 255, 255, 0.822);
+    border-radius: var(--round_corners);
+    border-left: 3px solid rgb(134, 134, 134);
+    border-right: 3px solid rgb(134, 134, 134);
+    box-shadow: var(--shadows);
+}
+/* Типографика */
+h1 {
+    display: inline-block;
+    font-size: 55px;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 33px;
+}
+
+.p1 {
+    columns: 150px auto;
+	column-gap: 24px;
+    column-rule: 1px solid #D4D4D4;
+}
+
+.p1:first-letter {
+    font-size: 77px;
+    float: left;
+    margin: 0 15px 0 0;
+}
+/* ______________________ */
+
+#body div p {
+    text-align:justify;
+}
+
+#body div {
+    width: calc(88%/3);
+    float: left;
+    margin: 0% 2% 0% 2%;
+}
+/* подвал */
+#footer {
+    display: inline-block;
+    width: 100%;
+    height: 15vh;
+    margin: 0 auto;
+    background-color: rgba(32, 32, 32, 0.349);
+    left:0;
+    right:0;
+    padding: 1%;
+}
+
+#footer:hover {
+    background-color: rgb(36, 36, 36);
+    transition: all ease-in-out 0.3s;
+}
+
+
+/* изображения */
+#plane {
+    width: 100%;
+}
+
+#road {
+    width: 100%;
+    float: left;
+    margin: 2% 2% 2% 0%;
+}
+
+/* лого */
+#logo1 {
+    display: block;
+    position: relative;
+    float: left;
+    height: 8vh;
+}
+
+#logo2 {
+    float: right;
+    height: 8vh;
+}
+
+/* Меню  горизонтальное*/
+.header_menu {
+    display: inline-block;
+    position: relative;
+    width: 70%;
+    height: 6vh;
+    margin: 2vh auto 0 auto;
+    padding: 0;
+}
+
+.header_menu ul {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin: 1vh auto;
+    padding: 0;
+}
+
+.header_menu  li {
+    display: inline-block;
+    background-color: aliceblue;
+    position: relative;
+    margin: 0 3% 0 3%;
+    padding: 0.5%;
+    position: relative;
+ }
+
+.header_menu  li a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.header_menu  li a::before {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 0%;
+    background: rgb(146, 155, 163);
+    transition: width ease-in-out 0.3s;
+    transition-delay: 0.2s;
+    left: 0;
+    bottom: -7px;
+}
+
+.header_menu  li a:hover::before {
+   width: 100%;
+}
+/* ------------------------------------------------- */
+.footer_text {
+    display: inline-block;
+    position: relative;
+    color: aliceblue;
+    font-size: 14px;
+    text-align: justify;
+    width: 50%;
+}
