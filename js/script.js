@@ -1,3 +1,3 @@
-var message = "hello world";
-var yaers = 18;
-alert(message);
+var str =  prompt("ваше имя");
+var reg = (/\d/i.test(str));
+if (reg === true) alert("good boy");
